@@ -1,0 +1,23 @@
+{
+  "name": "back-end-survey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/express/app",
+    "server": "nodemon ./src/express/app",
+    "db": "/Users/fedak/mongodb/bin/mongod.exe --dbpath=/Users/fedak/mongodb-data",
+    "dev": "concurrently --kill-others \"npm run db\" \"npm run server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4"
+  }
+}
